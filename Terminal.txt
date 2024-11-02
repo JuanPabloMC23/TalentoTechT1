@@ -1,0 +1,12 @@
+py -m pip install virtualenv  
+py --version
+py -m virtualenv taller1_env
+taller1_env\Scripts\activate
+pip install tensorflow numpy matplotlib
+py -m pip freeze > requirements.txt
+py -m pip install streamlit
+streamlit run app.py
+CTRL + C para detener
+deactivate
+git --version
+git init
